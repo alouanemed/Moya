@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "License.md" }
   s.author             = { "Ash Furrow" => "ash@ashfurrow.com" }
   s.social_media_url   = "http://twitter.com/ashfurrow"
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
   s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '10.0'
   s.watchos.deployment_target = '3.0'
@@ -37,6 +37,6 @@ Pod::Spec.new do |s|
   s.subspec "RxSwift" do |ss|
     ss.source_files = "Sources/RxMoya/"
     ss.dependency "Moya/Core"
-    ss.dependency "RxSwift", "~> 6.0.0-beta.1"
+    ss.dependency "RxSwift", "~> 5.0"
   end
 end
